@@ -1,0 +1,10 @@
+module sumador (
+    input  wire [3:0] a,
+    input  wire [3:0] b,
+    input  wire       cin,
+    output wire [3:0] suma,
+    output wire       cout
+);
+    assign {cout, suma} = a + b + cin;
+
+endmodule
